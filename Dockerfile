@@ -13,7 +13,7 @@ RUN npm install -g express
 RUN npm install -g express-generator
 RUN express -e express
 
-cp app.js /usr/share/express/
+
 
 
 
