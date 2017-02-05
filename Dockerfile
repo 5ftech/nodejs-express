@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-RUN mkdir -p /usr/share/
+RUN mkdir -p /usr/share/express
 WORKDIR /usr/share/
 RUN apt-get update
 RUN apt-get install -y wget
@@ -11,11 +11,7 @@ RUN apt-get install -y nodejs
 
 RUN npm install -g express
 RUN npm install -g express-generator
-RUN express -e express
 
-
-
-
-
+VOLUME "/usr/share/express"
 
 CMD ["node /usr/share/express/bin/www"]
