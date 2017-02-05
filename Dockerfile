@@ -14,4 +14,4 @@ RUN npm install -g express-generator
 
 VOLUME "/usr/share/express"
 
-CMD ["node /usr/share/express/bin/www"]
+CMD ["/usr/bin/node /usr/share/express/bin/www"]
